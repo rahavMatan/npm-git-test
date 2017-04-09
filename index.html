@@ -1,0 +1,23 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.js"></script>
+  <link rel="stylesheet" href="app.css" />
+
+
+  <script src="app.js"></script>
+</head>
+<body ng-app="myApp">
+
+<div ng-controller="myCtrl as ctrl"  >
+
+  <div ng-if="ctrl.someBool" class="aDiv">
+    a div
+  </div>
+  <button ng-click="ctrl.doSomething()">click</button>
+
+</div>
+
+</body>
+</html>
